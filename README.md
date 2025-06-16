@@ -23,3 +23,58 @@ Indie Hindi Voice Generator is a web application that allows users to generate a
    ```bash
    git clone https://github.com/your-username/HindiTTS.git
    cd HindiTTS
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Ensure `edge-tts` is installed and accessible from the command line.
+
+## 🛠️ Usage
+
+1. Start the Flask server:
+   ```bash
+   python main.py
+   ```
+
+2. Open your browser and navigate to:
+   ```
+   http://localhost:5000
+   ```
+
+3. Enter the Hindi text, adjust the rate, pitch, and volume, select a voice, and click "Generate & Download Voice" to download the MP3 file.
+
+## 📂 Project Structure
+
+```
+HindiTTS/
+├── templates/          # HTML templates for the web app
+├── static/             # Static files (if any)
+├── main.py             # Flask application
+├── requirements.txt    # Python dependencies
+├── .render.yaml        # Render deployment configuration
+├── README.md           # Project documentation
+```
+
+## 🛠 Deployment
+
+This project is configured for deployment on Render. To deploy:
+
+1. Push your code to a Git repository.
+2. Connect your repository to Render.
+3. Render will automatically use the `.render.yaml` file to build and deploy your app.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## ❤️ Acknowledgments
+
+- Built with Flask and `edge-tts`.
+- Inspired by the need for high-quality Hindi TTS solutions.
